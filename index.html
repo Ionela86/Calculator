@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tema Sesiunea 21</title>
+        <link href="style.css" rel="stylesheet">
+        <h1>My Calculator</h1>
+    </head>
+
+    <body>
+
+        <table id="calculator">
+
+            <tr>
+                <td colspan="3"><input type="text" id="result"></td>
+                <td><input type="button" value="C" onclick="sterge()" /></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="taste('1')" onkeydown="myFunction(event)"> </td>
+                <td><input type="button" value="2" onclick="taste('2')" onkeydown="myFunction(event)"> </td>
+                <td><input type="button" value="3" onclick="taste('3')" onkeydown="myFunction(event)"> </td>
+                <td><input type="button" value="+" onclick="taste('+')" onkeydown="myFunction(event)"> </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="taste('4')" onkeydown="myFunction(event)"> </td>
+                <td><input type="button" value="5" onclick="taste('5')" onkeydown="myFunction(event)"> </td>
+                <td><input type="button" value="6" onclick="taste('6')" onkeydown="myFunction(event)"> </td>
+                <td><input type="button" value="-" onclick="taste('-')" onkeydown="myFunction(event)"> </td>
+            </tr>
+            <tr>
+                
+                <td><input type="button" value="7" onclick="taste('7')" onkeydown="myFunction(event)"> </td>
+                <td><input type="button" value="8" onclick="taste('8')" onkeydown="myFunction(event)"> </td>
+                <td><input type="button" value="9" onclick="taste('9')" onkeydown="myFunction(event)"> </td>
+                <td><input type="button" value="*" onclick="taste('*')" onkeydown="myFunction(event)"> </td>
+            </tr>
+            <tr>
+                
+                <td><input type="button" value="0" onclick="taste('0')" onkeydown="myFunction(event)"> </td>
+                <td><input type="button" value="." onclick="taste('.')" onkeydown="myFunction(event)"> </td>
+                <td><input type="button" value="=" onclick="solve()"> </td>
+                <td><input type="button" value="/" onclick="taste('/')" onkeydown="myFunction(event)"> </td>
+
+            </tr>
+
+        </table>
+    
+        <script src="index.js"></script>
+    </body>
+
+</html>
